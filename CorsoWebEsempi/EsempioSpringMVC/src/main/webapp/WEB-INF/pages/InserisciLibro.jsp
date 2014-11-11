@@ -9,13 +9,15 @@
 <title>Model e View</title>
 </head>
 <body>
-	<form:form action="/getLibroSingoloModel" method="post"
-		modelAttribute="libro">
+
+	<form:form action="/EsempioSpringMVC/inserisciLibroAction"
+		method="post" modelAttribute="libro">
 		<label>Titolo:</label>
 		<form:input path="titolo" />
 		<label>Anno:</label>
 		<form:input path="anno" />
-		<input type="submit" />
+		<input type="submit" value="Inserisci Libro" />
 	</form:form>
+
 </body>
 </html>
