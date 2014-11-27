@@ -6,9 +6,27 @@
 
 <h:body>
 
-	<h1>Esempio JSF 2 + Spring</h1>
+	<h:form>
+		<h1>Esempio JSF 2 + Spring</h1>
+		<br />
+		<h:outputLabel value="Nome" />
+		<h:inputText value="#{formDiEsempioBean.nome}" />
+		<br />
+		<h:outputLabel value="Cognome" />
+		<h:inputText value="#{formDiEsempioBean.cognome}" />
+		<br />
+		<h:outputLabel value="Eta'" />
+		<h:inputText value="#{formDiEsempioBean.eta}" />
+		<br />
 
+		<h:commandButton type="submit"
+			action="#{formDiEsempioBean.registrati}" value="Registrati" />
 
+		<h:commandButton type="submit"
+			action="#{formDiEsempioBean.registratiConNavigazione}" value="Registrati Con Navigazione" />
+
+		<h:outputLabel value="#{formDiEsempioBean.messaggioConferma}'" />
+	</h:form>
 </h:body>
 
 </html>
