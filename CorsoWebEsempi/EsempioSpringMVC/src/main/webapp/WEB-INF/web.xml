@@ -6,8 +6,6 @@
 	<display-name>EsempioMVC</display-name>
 
 	<!-- SERVLET SPRING MVC -->
-
-	
 	<servlet>
       <servlet-name>SpringMVCwebServlet</servlet-name>
       <servlet-class>

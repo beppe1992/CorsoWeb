@@ -17,5 +17,7 @@
   <modules>
     <module>EsempioSpringMVC</module>
     <module>EsempioSpringWebFlow</module>
+    <module>esempiJsfSpring</module>
+    <module>EsempioSpringJsf</module>
   </modules>
 </project>
