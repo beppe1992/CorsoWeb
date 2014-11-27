@@ -6,6 +6,8 @@
 	<display-name>EsempioMVC</display-name>
 
 	<!-- SERVLET SPRING MVC -->
+	<!-- IN QUESTO CASO NON SERVE INSERIRE IL ContextLoaderListener IN QUANTO 
+	SI INSERISCE DIRETTAMENTE QUI DENTRO IL FILE DI CONFIGURAZIONE DI SPRING DA USARE	 -->
 	<servlet>
       <servlet-name>SpringMVCwebServlet</servlet-name>
       <servlet-class>

@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
-@Scope("session")
+@Scope("request")
 public class FormDiEsempioBean implements Serializable {
 
 	private String nome;
@@ -19,6 +19,8 @@ public class FormDiEsempioBean implements Serializable {
 
 		messaggioConferma = "REGISTRAZIONE UTENTE: " + nome + " " + cognome
 				+ " CORRETTAMENTE AVVENUTA";
+
+		this.resetCampi();
 	}
 
 	public String registratiConNavigazione() {
@@ -26,6 +28,7 @@ public class FormDiEsempioBean implements Serializable {
 		messaggioConferma = "REGISTRAZIONE UTENTE: " + nome + " " + cognome
 				+ " CORRETTAMENTE AVVENUTA";
 
+		this.resetCampi();
 		return "registrazioneOk";
 	}
 

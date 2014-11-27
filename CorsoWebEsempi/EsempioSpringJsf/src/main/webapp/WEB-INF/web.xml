@@ -5,27 +5,18 @@
 
 	<display-name>EsempioJSF</display-name>
 
-	<!-- SERVLET SPRING MVC -->
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
 		<param-value>/WEB-INF/config/spring-beans.xml</param-value>
 	</context-param>
-	<context-param>
-		<param-name>javax.faces.DEFAULT_SUFFIX</param-name>
-		<param-value>.xhtml</param-value>
-	</context-param>
 
 
+	<!-- SERVE PER INIZIALIZZARE IL CONTESTO SPRING DEFINITO DAL PARAMETRO contextConfigLocation -->
 	<listener>
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 	</listener>
-	<listener>
-		<listener-class>
-			org.springframework.web.context.request.RequestContextListener
-		</listener-class>
-	</listener>
 
-
+	<!-- SERVE PER TRADURRE LE PAGINE JSF -->
 	<servlet>
 		<servlet-name>facesServlet</servlet-name>
 		<servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
