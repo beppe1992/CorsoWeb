@@ -32,7 +32,7 @@ public class FormDiEsempioBean implements Serializable {
 		return "registrazioneOk";
 	}
 
-	public void resetCampi() {
+	private void resetCampi() {
 		nome = "";
 		cognome = "";
 		eta = 0;
