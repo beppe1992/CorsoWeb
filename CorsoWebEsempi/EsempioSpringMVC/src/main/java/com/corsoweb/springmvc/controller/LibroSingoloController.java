@@ -24,6 +24,17 @@ public class LibroSingoloController {
 		return "LibroSingolo";
 	}
 
+	// rimanda alla pagina del libro singolo e gli setta Titolo = nome passato
+	// nel path e anno
+	// = 2014
+	@RequestMapping(value = "/getLibroSingolo/{nome}", method = RequestMethod.GET)
+	public String getListaLibriPathVariable(@PathVariable("nome") String nome,
+			Model model) {
+		model.addAttribute("titolo", nome);
+		model.addAttribute("anno", "2014");
+		return "LibroSingolo";
+	}
+
 	// rimanda alla pagina del libro singolo e gli setta Titolo = Libro 1 e anno
 	// = 2014 (restituendo pero' un ModelAndView)
 	@RequestMapping(value = "/getLibroSingoloMV")
@@ -37,30 +48,20 @@ public class LibroSingoloController {
 		return modelAndView;
 	}
 
-	// restituisce un'oggeto JSON
-	@RequestMapping(value = "/getLibroObj")
-	@ResponseBody
-	public ModelAndView getLibroObj() {
+	// rimanda alla pagina del libro singolo e gli setta Titolo = Libro 1 e anno
+	// = 2014 (restituendo pero' un ModelAndView)
+	@RequestMapping(value = "/getLibroSingoloMVObj")
+	public ModelAndView getLibroSingoloObj() {
 
 		Libro libro = new Libro();
-		libro.setAnno("2014");
-		libro.setTitolo("Libro 1");
+		libro.setAnno("2020");
+		libro.setTitolo("Libro AAAA");
+
 		ModelAndView modelAndView = new ModelAndView();
 		modelAndView.addObject("libro", libro);
-		modelAndView.setViewName("LibroSingolo");
+		modelAndView.setViewName("LibroSingoloObj");
 
 		return modelAndView;
-	}
-
-	// rimanda alla pagina del libro singolo e gli setta Titolo = nome passato
-	// nel path e anno
-	// = 2014
-	@RequestMapping(value = "/getLibroSingolo/{nome}", method = RequestMethod.GET)
-	public String getListaLibriPathVariable(@PathVariable("nome") String nome,
-			Model model) {
-		model.addAttribute("titolo", nome);
-		model.addAttribute("anno", "2014");
-		return "LibroSingolo";
 	}
 
 }

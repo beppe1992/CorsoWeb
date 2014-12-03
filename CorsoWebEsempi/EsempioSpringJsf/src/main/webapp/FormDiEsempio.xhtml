@@ -8,22 +8,27 @@
 
 	<h:form>
 		<h1>Esempio JSF 2 + Spring</h1>
-		<br />
-		<h:outputLabel value="Nome" />
-		<h:inputText value="#{formDiEsempioBean.nome}" />
-		<br />
-		<h:outputLabel value="Cognome" />
-		<h:inputText value="#{formDiEsempioBean.cognome}" />
-		<br />
-		<h:outputLabel value="Eta'" />
-		<h:inputText value="#{formDiEsempioBean.eta}" />
-		<br />
+		<table>
 
+			<tr>
+				<td><h:outputLabel value="Nome" /></td>
+				<td><h:inputText value="#{formDiEsempioBean.nome}" /></td>
+			</tr>
+			<tr>
+				<td><h:outputLabel value="Cognome" /></td>
+				<td><h:inputText value="#{formDiEsempioBean.cognome}" /></td>
+			</tr>
+			<tr>
+				<td><h:outputLabel value="Eta'" /></td>
+				<td><h:inputText value="#{formDiEsempioBean.eta}" /></td>
+			</tr>
+		</table>
 		<h:commandButton type="submit"
 			action="#{formDiEsempioBean.registrati}" value="Registrati" />
 
 		<h:commandButton type="submit"
-			action="#{formDiEsempioBean.registratiConNavigazione}" value="Registrati Con Navigazione" />
+			action="#{formDiEsempioBean.registratiConNavigazione}"
+			value="Registrati Con Navigazione" />
 
 		<h:outputLabel value="#{formDiEsempioBean.messaggioConferma}'" />
 	</h:form>
