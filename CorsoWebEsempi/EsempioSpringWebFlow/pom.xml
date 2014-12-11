@@ -79,7 +79,6 @@
 			<artifactId>com.springsource.org.jboss.el</artifactId>
 			<version>2.0.0.GA</version>
 		</dependency>
-		<!-- http://www.devme.it/its-spring/spring-web-flow-tutto-dun-fiato-part-12/ -->
 
 	</dependencies>
 

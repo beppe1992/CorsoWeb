@@ -4,9 +4,12 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/webflow http://www.springframework.org/schema/webflow/spring-webflow-2.0.xsd">
 
 
-
 	<!-- Visualizza la maschera -->
-	<view-state id="indiceOfficina" view="indiceOfficina.xhtml">
+	<view-state id="home" view="esempioTransition.xhtml">
+		<transition on="vaiADettaglio" to="paginaDettaglio"></transition>
+	</view-state>
+
+	<view-state id="paginaDettaglio" view="paginaDettaglio.xhtml">
 	</view-state>
 
 </flow>

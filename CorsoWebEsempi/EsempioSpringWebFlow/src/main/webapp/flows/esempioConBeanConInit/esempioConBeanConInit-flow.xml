@@ -3,10 +3,13 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/webflow http://www.springframework.org/schema/webflow/spring-webflow-2.0.xsd">
 
-
+	<var name="beanEsempio1" class="com.corsoweb.springwebflow.bean.EsempioBean1" />
 
 	<!-- Visualizza la maschera -->
-	<view-state id="indiceOfficina" view="indiceOfficina.xhtml">
+	<view-state id="esempioConBean" view="esempioConBeanConInit.xhtml">
+		<on-entry>
+			<evaluate expression="beanEsempio1.initEsempio()" />
+		</on-entry>
 	</view-state>
 
 </flow>

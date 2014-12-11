@@ -6,7 +6,15 @@
 
 <body>
 	<h:form>
-		<h:outputLabel value="Ciao Sono l'indice dell'Officina" />
+		<table>
+
+			<tr>
+				<td><h:outputLabel value="Nome" /></td>
+				<td><h:inputText value="#{beanEsempio1.nome}" /></td>
+			</tr>
+		</table>
+
+		<h:commandButton value="submit" type="submit" action="#{beanEsempio1.submit}" />
 	</h:form>
 </body>
 
