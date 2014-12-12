@@ -12,7 +12,11 @@
 
 		<transition on="vaiADettaglioConSetVariable" to="paginaDettaglioLibroInOfferta">
 			<set name="flowScope.liBroInOfferta" value="'Libro'" />
+		</transition>
 
+		<transition on="vaiADettaglioConEvaluate" to="paginaDettaglioLibroInOfferta">
+			<evaluate expression="beanTransition.salva()" />
+			<set name="flowScope.liBroInOfferta" value="'Libro'" />
 		</transition>
 	</view-state>
 

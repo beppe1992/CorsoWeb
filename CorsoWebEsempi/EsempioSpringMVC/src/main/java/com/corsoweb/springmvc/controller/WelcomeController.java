@@ -35,11 +35,4 @@ public class WelcomeController {
 		return "Welcome";
 	}
 
-	// esempio di chiamata ad un metodo ma che restituisce una pagina
-	// inesistente
-	@RequestMapping(value = "/paginaNonEsistente")
-	public String viewPaginaInesistente() {
-		return "PaginaInesistente";
-	}
-
 }

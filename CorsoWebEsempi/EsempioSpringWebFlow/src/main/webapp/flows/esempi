@@ -1,14 +1,11 @@
 
 
 action-state
-decision-state
 exception-handler
 end-state
 global-transition
-transition + evaluate
 input
 on-end
-on-start (get parametro da POST o GET)
 output
 navigazione tra diversi flow
 

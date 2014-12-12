@@ -4,9 +4,9 @@ import java.io.Serializable;
 
 public class EsempioBeanTransition implements Serializable {
 
-	public String getLibroInOfferta() {
-		System.out.println("Ciao");
-		return "Libro In Offerta";
+	public void salva() {
+		System.out.println("Sto salvando");
+		;
 	}
 
 }
