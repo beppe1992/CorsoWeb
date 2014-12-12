@@ -3,13 +3,23 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/webflow http://www.springframework.org/schema/webflow/spring-webflow-2.0.xsd">
 
+	<var name="beanTransition" class="com.corsoweb.springwebflow.bean.EsempioBeanTransition" />
 
 	<!-- Visualizza la maschera -->
 	<view-state id="home" view="esempioTransition.xhtml">
 		<transition on="vaiADettaglio" to="paginaDettaglio"></transition>
+
+
+		<transition on="vaiADettaglioConSetVariable" to="paginaDettaglioLibroInOfferta">
+			<set name="flowScope.liBroInOfferta" value="'Libro'" />
+
+		</transition>
 	</view-state>
 
 	<view-state id="paginaDettaglio" view="paginaDettaglio.xhtml">
+	</view-state>
+
+	<view-state id="paginaDettaglioLibroInOfferta" view="paginaDettaglioLibroInOfferta.xhtml">
 	</view-state>
 
 </flow>

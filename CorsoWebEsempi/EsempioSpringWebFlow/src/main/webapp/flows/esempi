@@ -6,7 +6,6 @@ exception-handler
 end-state
 global-transition
 transition + evaluate
-transition + set variable
 input
 on-end
 on-start (get parametro da POST o GET)
