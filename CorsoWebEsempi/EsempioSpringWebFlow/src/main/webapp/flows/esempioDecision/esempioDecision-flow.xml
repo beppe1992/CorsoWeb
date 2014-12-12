@@ -12,6 +12,11 @@
 		<if test="true" then="userNotAbilitedPage" />
 	</decision-state>
 
+	<!-- <decision-state id="decisionConBean">
+		<if test="bean.checkUtente(conversationScope.utente) " then="esempioOnStart" />
+		<if test="true" then="userNotAbilitedPage" />
+	</decision-state> --> 
+
 	<!-- Visualizza la maschera -->
 	<view-state id="esempioOnStart" view="esempioDecision.xhtml">
 	</view-state>
