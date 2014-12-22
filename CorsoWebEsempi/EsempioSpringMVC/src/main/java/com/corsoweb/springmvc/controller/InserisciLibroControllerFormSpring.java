@@ -26,7 +26,7 @@ public class InserisciLibroControllerFormSpring {
 	}
 
 	// scrive il Libro sul DB
-	@RequestMapping(value = "/inserisciLibroSpring")
+	@RequestMapping(value = "/inserisciLibroSpring" )
 	public String inserisciLibro(@ModelAttribute("libro") Libro libro) {
 
 		System.out.println("Inserendo libro con titolo: " + libro.getTitolo()

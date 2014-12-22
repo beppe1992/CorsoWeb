@@ -1,10 +1,1 @@
-
-
-action-state
-exception-handler
-end-state
-global-transition
-input
-on-end
-output
-navigazione tra diversi flow
+MANCA IL PASSAGGIO DI PARAMETRI TRA DIVERSI FLOW

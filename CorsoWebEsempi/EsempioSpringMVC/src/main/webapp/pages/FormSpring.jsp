@@ -6,7 +6,7 @@
 <body>
 
 	<h2>Libro</h2>
-	<form:form method="POST"
+	<form:form method="GET"
 		action="/EsempioSpringMVC/inserisciLibroSpring" modelAttribute="libro">
 		<table>
 			<tr>

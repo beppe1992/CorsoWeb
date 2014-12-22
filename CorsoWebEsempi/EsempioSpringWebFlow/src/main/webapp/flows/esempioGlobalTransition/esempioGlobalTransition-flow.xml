@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flow xmlns="http://www.springframework.org/schema/webflow"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/webflow http://www.springframework.org/schema/webflow/spring-webflow-2.0.xsd">
+
+
+	<!-- Visualizza la maschera -->
+	<view-state id="home" view="esempioGlobalTransition.xhtml">
+		<transition on="vaiADettaglio1" to="paginaDettaglio1"></transition>
+		<transition on="vaiADettaglio2" to="paginaDettaglio2"></transition>
+
+	</view-state>
+
+	<view-state id="paginaDettaglio1" view="paginaDettaglio1.xhtml">
+	</view-state>
+
+	<view-state id="paginaDettaglio2" view="paginaDettaglio2.xhtml">
+	</view-state>
+
+	<global-transitions>
+		<transition on="toHome" to="home"></transition>
+		<transition on-exception="java.lang.NumberFormatException"
+			to="" />
+	</global-transitions>
+
+</flow>
