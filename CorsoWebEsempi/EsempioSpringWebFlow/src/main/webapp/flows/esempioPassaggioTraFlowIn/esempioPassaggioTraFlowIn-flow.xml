@@ -12,8 +12,7 @@
 	</view-state>
 
 	<end-state id="fineFlow"
-		view="externalRedirect:../spring/esempioPassaggioTraFlowOut">
-		<output name="nome" value="'Ciao'" />
+		view="externalRedirect:../spring/esempioPassaggioTraFlowOut?nome=#{beanTraFlow.nome}">
 	</end-state>
 
 </flow>
