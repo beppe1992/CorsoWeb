@@ -19,8 +19,6 @@
 
 	<global-transitions>
 		<transition on="toHome" to="home"></transition>
-		<transition on-exception="java.lang.NumberFormatException"
-			to="" />
 	</global-transitions>
 
 </flow>

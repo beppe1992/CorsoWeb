@@ -14,6 +14,7 @@
 		<evaluate expression="beanActionState.getNome()" />
 		<transition on="rimaniQui" to="home" />
 		<transition on="nuovaPagina" to="campoCompilato" />
+		<transition to="home" />
 	</action-state>
 
 	<view-state id="campoCompilato" view="esempioActionStateResponseOk.xhtml">
